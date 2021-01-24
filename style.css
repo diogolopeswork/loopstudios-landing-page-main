@@ -184,7 +184,6 @@ section {
     height: 150vh;
     display: flex;
 	flex-direction: column;
-	background-color: coral;
 }
 
 .cards-header {
@@ -221,7 +220,8 @@ section {
 .btn:hover {
     background-color: var(--Black);
     color: var(--White);
-    transition: .3s;
+	transition: .3s;
+	cursor: pointer;
 }
 
 .cards-container {
@@ -230,13 +230,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightblue;
 }
 
 .row1 {
 	width: 90%;
 	height: 50%;
-	background-color: pink;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -262,6 +260,42 @@ section {
 }
 
 .card-text {
+	margin: 350px 0px 0 -230px;
+    position: absolute;
+    color: var(--White);
+    font-size: 35px;
+    font-family: var(--Josefin);
+    text-transform: uppercase;
+}
+
+.row2 {
+	width: 90%;
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.card2{
+	width: 258px;
+	height: 452px;
+	margin: 0 30px 0 30px;
+}
+
+.card2:hover img {
+	opacity: 50%;
+	background-color: var(--White);
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+
+.card2:hover .card2-text {
+	color: black;
+	transition: .3s ease-in-out;
+}
+
+.card2-text {
 	margin: 350px 0px 0 -230px;
     position: absolute;
     color: var(--White);
