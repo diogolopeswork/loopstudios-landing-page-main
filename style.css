@@ -47,6 +47,10 @@ header {
     background-position: center;
 }
 
+.hamburger, .c-hamburger {
+    display: none;
+}
+
 .header-top {
     height: 15vh;
     display: flex;
@@ -88,6 +92,7 @@ header {
     transition: .5s;
     width: 80%;
     visibility: visible;
+    cursor: pointer;
 }
 
 #heroMobile {
@@ -274,7 +279,8 @@ section {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    margin: -70px 0 0 0;
 }
 
 .card2{
@@ -302,6 +308,257 @@ section {
     font-size: 35px;
     font-family: var(--Josefin);
     text-transform: uppercase;
+}
+
+.footer {
+    height: 25vh;
+    width: 100%;
+    background-color: var(--Black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-header {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#footerLogo {
+    width: 13%;
+    object-fit: contain;
+}
+
+.social {
+    display: flex;
+}
+
+.social li {
+    list-style: none;
+    margin: 0 4px 0 4px;
+}
+
+.social li:hover {
+    cursor: pointer;
+}
+
+.footer-content {
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.footer-nav li {
+    list-style-type: none;
+}
+
+.footer-nav a {
+    font-size: 15px;
+    color: var(--White);
+    font-family: var(--alata);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-content span {
+    color: var(--VeryDarkGray);
+    font-family: var(--alata);
+    font-weight: 400;
+    margin: 0 27px 0 0;
+}
+
+@media screen and (max-width: 812px) {
+
+    .nav, .nav li, .nav a {
+        display: none;
+    }
+
+    .hamburger, .c-hamburger {
+        display: block;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        position: absolute;
+        top: 6%;
+        left: 164%;
+    }
+
+    .c-hamburger {
+        display: none;
+    }
+
+    .active {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        background-color: var(--Black);
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    body {
+        width: 950px;
+    }
+
+    .header-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #logo {
+        margin-left: -50px;
+    }
+
+    .nav {
+        width: 45%;
+        display: flex;
+        margin: 0 1px 0 -10px;
+    }
+
+    .title {
+        margin: 300px 0 0 90px;
+    }
+
+    .virtual-reality-box {
+        margin-left: -50px;
+        width: 500px;
+    }
+
+    .cards {
+        width: 100%;
+        height: 300vh;
+    }
+
+    .cards-header {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .cards-header h2 {
+        margin: 0 0 0 -120px;
+    }
+
+    .cards-container {
+        width: 900px;
+        height: 300vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row1 {
+        width: 900px;
+        height: 50%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        flex-direction: row;
+    }
+
+    .row2 {
+        width: 900px;
+        height: 50%;
+
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        flex-direction: row;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    #logo {
+        width: 15%;
+    }
+
+    .nav {
+        width: 35%;
+    }
+
+    .nav a {
+        font-size: 20px;
+    }
+
+    .title {
+        width: 600px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        margin: 300px 0 0 200px;
+    }
+
+    #interactive {
+        margin: 0;
+        width: 130%;
+    }
+
+    .virtual-reality-box {
+        width: 700px;
+        height: 500px;
+        margin: 190px 0 0 20px;
+    }
+
+    .virtual-reality-box h2 {
+        margin: 0 0 30px 0;
+    }
+
+    .virtual-reality-box p {
+        font-size: 16px;
+        line-height: 1.85;
+    }
+
+    .cards-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards-header h2 {
+        margin: 0 0 0 100px;
+    }
+
+    .row2 {
+        margin: -200px 0 0 0;
+    }
+
+    .social {
+        margin: 10px 0 0 0;
+    }
+
+    .footer-nav {
+        margin-left: -10px;
+    }
+
+    .footer-nav a {
+        font-size: 18px;
+    }
 }
 
 
