@@ -339,7 +339,7 @@ footer .social p {
         background: transparent;
         display: flex;
         flex-direction: row;
-        margin: -350px 0 0 500px;
+        margin: -280px 0 0 500px;
         z-index: 10;
         position: absolute;
     }
