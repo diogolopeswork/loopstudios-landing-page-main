@@ -505,7 +505,34 @@ footer .social p {
 }
 
 @media screen and (min-width: 1440px) {
+    body, html {
+        overflow-x: hidden;
+    }
 
+    #logoImage {
+        margin: 10px 0 0 50px;
+    }
+    
+    #hero header .nav {
+        margin: -430px 0 0 1200px;
+    }
+
+    #hero {
+        position: relative;
+    }
+
+    #hero .hero-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 300px;
+        margin: 0 0 0 30px;
+    }
+
+    #hero .hero-content h1 {
+        margin: 0 0 0 -150px;
+    }
 }
 
 
