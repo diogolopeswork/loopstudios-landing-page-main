@@ -325,7 +325,7 @@ footer .social p {
         z-index: 1;
     }
 
-    #creations .btn-desktop {
+    #creations .heading > .btn-desktop {
         display: none;
     }
 }
